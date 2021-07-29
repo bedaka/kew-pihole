@@ -5,15 +5,15 @@ Sammlung der Inhalte und Präsentation für das Thema PiHole auf der KEW 2021
 
 ## ToDo
 
-[] Talk bei KEW anmelden 
-  [] Sollen wir den Vortrags-Teil hybrid machen oder nur für Anwesende?
+* [] Talk bei KEW anmelden 
+  - [] Sollen wir den Vortrags-Teil hybrid machen oder nur für Anwesende?
 
-[] Preis für raspi zero recherchieren
-[] Anzahl bestellten // TeilnehmerInnen Anzahl begrenzen oder first comes first serves und dann Gruppen bilden für praktischen Teil?
-[] Antrag für Kostenübernahme stellen
+* [] Preis für raspi zero recherchieren
+* [] Anzahl bestellten // TeilnehmerInnen Anzahl begrenzen oder first comes first serves und dann Gruppen bilden für praktischen Teil?
+* [] Antrag für Kostenübernahme stellen
 
-[] Präsentation zu revealmd umziehen
-[] Anleitung zum Aufsetzen des Pi schreiben (in diesem Readme) 
+* [] Präsentation zu revealmd umziehen
+* [] Anleitung zum Aufsetzen des Pi schreiben (in diesem Readme) 
 
 
 ## Gliederung - [Entwurf]
