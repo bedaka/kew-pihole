@@ -33,7 +33,17 @@ Quellen:
 *Hier könnten man einen Screenshot vom Network-Tab des Browsers einfügen,
 nachdem man https://www.nytimes.com aufgerufen hat.*
 
-# PiHole
+## Wie funktionieren Ad Blocker?
+
+Definition: Ad Blocker sind Browser Plugins/Extensions, die Ressource im HTML
+gegen eine Liste bekannter Werbe- oder Trackdienste abgleichen und das Laden der
+jeweiligen Inhalte notfalls blockieren.
+
+Populäre Ad Blocker:
+  - UBlock Origin
+  - …
+
+## PiHole
 
 Die Vorteile auf einem Blick:
   - Schütze das gesamte Netzwerk auf einmal
