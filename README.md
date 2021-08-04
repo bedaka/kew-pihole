@@ -14,6 +14,7 @@ Sammlung der Inhalte und Präsentation für das Thema PiHole auf der KEW 2021
 
 * [ ] Präsentation zu revealmd umziehen
 * [ ] Anleitung zum Aufsetzen des Pi schreiben (in diesem Readme) 
+* [ ] Vortrag "Einführung in WWW" ausformulieren
 
 
 ## Gliederung - [Entwurf]
