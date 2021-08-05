@@ -18,6 +18,12 @@ Sammlung der Inhalte und Präsentation für das Thema PiHole auf der KEW 2021
 * [ ] Vortrag "Einführung in WWW" ausformulieren
 
 
+## Raspberry Pi Zero Vertrieb
+
+  - Ali Express
+    - https://www.aliexpress.com/item/32566751770.html - 15,72€
+
+
 ## Gliederung - [Entwurf]
 1. Intro (AG-Link vorstellen)
 2. Werbetracker
