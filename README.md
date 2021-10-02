@@ -5,13 +5,13 @@ Sammlung der Inhalte und Präsentation für das Thema PiHole auf der KEW 2021
 
 ## ToDo
 
-* [ ] Talk bei KEW anmelden 
-  - [ ] Veranstaltungstext ausformulieren
-  - [ ] Sollen wir den Vortrags-Teil hybrid machen oder nur für Anwesende?
+* [X] Talk bei KEW anmelden 
+  - [X] Veranstaltungstext ausformulieren
+  - [X] Sollen wir den Vortrags-Teil hybrid machen oder nur für Anwesende?
 
-* [ ] Preis für raspi zero recherchieren
-* [ ] Anzahl bestellten // TeilnehmerInnen Anzahl begrenzen oder first comes first serves und dann Gruppen bilden für praktischen Teil?
-* [ ] Antrag für Kostenübernahme stellen
+* [X] Preis für raspi zero recherchieren
+* [X] Anzahl bestellten // TeilnehmerInnen Anzahl begrenzen oder first comes first serves und dann Gruppen bilden für praktischen Teil?
+* [X] Antrag für Kostenübernahme stellen
 
 * [ ] Präsentation zu revealmd umziehen
 * [ ] Anleitung zum Aufsetzen des Pi schreiben (in diesem Readme) 
@@ -43,3 +43,8 @@ Sammlung der Inhalte und Präsentation für das Thema PiHole auf der KEW 2021
   * Pros / Features (Vergleich Ladezeiten von Websites?)
   * Downsides / Was sollte beachtet werden? 
 5. Praktischer Teil
+
+
+## Quellen
+
+* [IOC Update Report into adtech and Real Time Bidding](assets/rtb/adtech-real-time-bidding-report-201906.pdf)
