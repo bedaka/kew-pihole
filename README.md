@@ -5,15 +5,9 @@ Sammlung der Inhalte und Präsentation für das Thema PiHole auf der KEW 2021
 
 ## ToDo
 
-<<<<<<< HEAD
 * [X] Talk bei KEW anmelden 
   - [X] Veranstaltungstext ausformulieren
   - [X] Sollen wir den Vortrags-Teil hybrid machen oder nur für Anwesende?
-=======
-* [x] Talk bei KEW anmelden 
-  - [ ] Veranstaltungstext ausformulieren
-  - [ ] Sollen wir den Vortrags-Teil hybrid machen oder nur für Anwesende?
->>>>>>> e4bc911e49c6b004cc9bf3f510890c44fc0aef21
 
 * [X] Preis für raspi zero recherchieren
 * [X] Anzahl bestellten // TeilnehmerInnen Anzahl begrenzen oder first comes first serves und dann Gruppen bilden für praktischen Teil?
