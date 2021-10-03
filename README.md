@@ -49,6 +49,7 @@ Sammlung der Inhalte und Präsentation für das Thema PiHole auf der KEW 2021
 
 * [IOC Update Report into adtech and Real Time Bidding](assets/rtb/adtech-real-time-bidding-report-201906.pdf)
 * [IAB TCF Vendor List](https://iabeurope.eu/vendor-list-tcf-v2-0/)
+* [Selling Off Privacy At Auction](assets/rtb/SellingOffPrivacyAtAuction.pdf)
 
 ## Pi-Hole Setup
 Part 1: Ein Betriebssystem auf dem Pi installieren und eine Verbindung aufbauen.
