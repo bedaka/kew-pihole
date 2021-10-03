@@ -26,23 +26,36 @@ Sammlung der Inhalte und Präsentation für das Thema PiHole auf der KEW 2021
 
 ## Gliederung - [Entwurf]
 1. Intro (AG-Link vorstellen)
-2. Werbetracker
+2. Werbetracking
   * Wie funktioniert Tracking
-  * Was wird inzwischen alles getracked
-  * Main Player (Firmen, tracker, aggregation und Verkauf von Daten)
-3. Klassisches Addblocking
-  * Was können Browser
+    * Tracking Pixel (Bene)
+    * RTB (Lukas)
+  * Main Player (Firmen, tracker, aggregation und Verkauf von Daten) (Bene)
+  * Why should I care?
+    * Privatsphäre
+    * Misbrauch / Unklare Verwendung -> Versicherungen?
+    * Manipulation
+3. Was tun?
   * AddBlocker Plugins
-  * Wo liegen Grenzen?
-4. PiHole
-  * Überblick
-  * Technischer Hintergrund
-    - Wie wird Webseite geladen in general
-    - Welche Rolle spielt DNS?
-  * Wie blockt das PiHole
-  * Pros / Features (Vergleich Ladezeiten von Websites?)
-  * Downsides / Was sollte beachtet werden? 
-5. Praktischer Teil
+    * Wo liegen Grenzen?
+      * decken nicht alle geräte ab...
+  * PiHole
+    * Überblick (OpenSource, Microcomputer...)
+    * Technischer Hintergrund
+      - Funktionsweise
+      - DNS
+      - Blocking Listen
+        - Wer betreibt diese Listen
+        - kann man die einfach kombinieren?
+    * Pros / Features
+    * Downsides / Was sollte beachtet werden? 
+4. Praktischer Teil
+   - An dieser stelle wäre der Workshop gewesen
+   - Existierendes Setup zeigen (Screensharing)
+5. Abschluss
+  * Repo (public),
+  * Termin & Kontakt AG 
+  * Quellen
 
 
 ## Quellen

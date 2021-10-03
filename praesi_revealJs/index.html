@@ -33,10 +33,163 @@
 						<li>...</li>
 					</ul>
 				</section>
+				<section style="background-image: url('images/ag-link_logo.png'); background-repeat: no-repeat">
+					<h2>Wer sind wir?</h2><br>
+					<h2>AG-Link</h2><p>
+						für kritische Informatik an der Uni Leipzig.
+					</p>
+					`https://ag-link.xyz/`
+
+					Plenum immer Mittwoch Abends 19.00Uhr in XXX
+
+					Schreibt uns unter  ag-link@riseup.net 
+
+				</section>
+
+				<!-- Kapitel 1: Werbetracking -->
+
+				<section data-markdown="">
+					Wir alle haben uns an personalisierte Werbung und das dazugehörige Tracking gewöhnt.
+					Zwar sind die meisten (Studie zur Aktzeptanz?) eher ablehnend ggü. Werbung eingestellt, allerdings veranlasst es uns meistens nicht dazugehörige
+					unser Verhalten zu ändern. 
+					Ad Blocker erlauben zwar zumindest im Browser das surfen erträglicher zu machen, aber an vielemn Stellen haben wir keine Wahl.
+					Und so richtig wissen wir eigentlich nicht welche Daten durch wen gesammelt werden und was dann mit denen passiert.					
+				</section>
+				<section data-markdown>
+					Personalisierte Werbung wurde in den letzten Jahren so akkurat, dass sich das Gerücht etablierte, dass FB NutzerInnen über das Mikrofon belauscht.
+					Dies ist inzwischen weitestgehend wiederlegt, allerdings helfen andere Techniken dabei ein ähnlich akurates Ergbenis zu erzielen.
+				</section>
+				<section data-markdown>
+					## Cookies
+				</section>
+				<!--Tracking Pixel-->
+				<section>
+					<h2>Tracking Pixel</h2>
+					<ul>
+						<li>1x1 großes Bild als Code im HTML der Webseite oder E-Mail. </li>
+						<li>Registriert Nutzerverhalten</li>
+					</ul>
+					
+					Klassisch ist dies ein einfaches HTML Tag:
+					<pre><code>
+					<img style="display: none;" src="/tracking">
+					</code></pre>
+					<aside class="notes">
+						1x1 pixel großes Bild das durch Code innerhalb des HTML der Webseite erzeugt wird.
+						Werden heutzutagen eigentlich überall eingesetzt
+						können sowohl auf Websites als auch in HTML Emails eingebunden werden
+					</aside>		
+				</section>
+
+				<section>
+					Wobei heutzutage in der Regel JavaScript pixels verwendet werden
+					<pre><code>
+					<script type="text/javascript" src="tracking.js"></script>
+					</code></pre>
+				</section>
+					
+				<section>
+				<section id="fragments" >
+					<h2>Tracking Pixel</h2>
+					<ul>
+						<li  style="display: inline-block;" class="fragment fade-up">* IP Adresse (Liefert Informationen zu eurem ISP)</li>
+						<li  style="display: inline-block;" class="fragment fade-up">* Browser (Chrome, Firefox, etc.)</li>
+						<li  style="display: inline-block;" class="fragment fade-up">* Geräte Typ (Mobile, Desktop, Tablet)</li>
+						<li  style="display: inline-block;" class="fragment fade-up">* Operating System (iOS, Android, Windows, etc.)</li>
+						<li  style="display: inline-block;" class="fragment fade-up">* Bildschirmgröße</li>
+						<li  style="display: inline-block;" class="fragment fade-up">* Referrer (Von wo aus ihr auf die Seite gelangt seit)</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Außerdem</h2>
+					- Messen von Verhalten und "conversions"
+					- Beavioural retargeting ermöglichen
+					- BetreiberInnen profitieren von Insights und Metriken
+					- Anbieter profitieren von Daten
+					<aside class="notes">
+						-> Für Website BetreiberInnen lohnt sich der Einsatz, da so Metriken über Demografie und Verhalten der NutzerInnen verfügbar werden.
+						-> erlauben behavioural retargeting
+						-> FB profitiert in Form zusätzlicher Daten. 
+					</aside>
+				</section>
+				<section>
+					<img src="./images/Facebook-Pixel.png" alt="facebook pixel website"  style="width: 600px; margin: 0 auto 4rem auto; background: transparent;" class="pihole-logo">
+				</section>
+				<section id="fragments">
+					<h2>Und was springt für uns dabei raus?</h2>
+					<ul>
+						<li style="display: inline-block;" class="fragment fade-left">* Personalisierte Werbeerfahrung.</li>
+						<li style="display: inline-block;" class="fragment fade-left">* Gezieltere Anzeigen führen häufiger zu Käufen.</li>
+						<li style="display: inline-block;" class="fragment fade-left">* Bessere generelle Nutzererfahrung durch Optimierung der Webseiten</li>
+					</ul>
+					<img class="fragment fade-down" style="height: 200px" src="images/shutuptakemymoney.gif">
+				</section>
+			</section>
+				
+
+				<section data-auto-animate>
+					<h2>Auktion eines Werbeplatzes</h2>
+					<pre data-id="code-animation">
+							<img src="images/real-time-bidding.png">
+					</pre>
+				</section>
+				<section data-markdown>
+					## Auswirkungen von micro targeting?
+						- ermöglicht manipulation (cambridge analytica)
+				</section>
+				<section data-markdown>
+					# Micro targeting
+					> In der Bundestagswahl 2021 nutzten alle etablierten parteien Microtargeting im Wahlkampf. (Netzpolitik 2017)
+
+					Die FDP schaltete bspw. Facebook-Werbungen, die sie abhängig von der Zielgruppe für oder gegen staatliche CO2-Limits positionierten. ("grüne Interessen", "Vielreisende").
+					
+					
+				</section>
+				<section data-markdown>
+					## Energieverbrauch
+					Der Stromverbrauch des Webenetzwerkes wird je nach Quelle auf 
+					um die 110TWH / Jahr geschätzt.
+					https://www.sciencedirect.com/science/article/pii/S0195925517303505
+				</section>
+				
+				
+
+				<!-- Adblocking mit PiHole -->
+
+				<section data-markdown>
+					## Ad AdBlocking
+					Wie können wir unsere privatspäre schützen / kontrolle über unsere Daten erlangen? 
+				</section>
+				<section data-markdown>
+					## Browser plugins
+					* Einfach einzurichten
+					* Funktionieren nur im Browser
+					* nicht auf jedem Gerät verfügbar (Smart TV, Innerhalb von Apps)
+				</section>
+
+				<section>
+					<h2>DNS who?</h2>
+					<img src="images/dnsExplained.jpg">
+					<p>Domain Name System</p>
+				</section>
+
+
 				<section>
 					<h3>Features</h3>
 					<img src="images/features.png" alt="pihole features"  style="height: 260px; margin: 0 auto 4rem auto; background: transparent;">
 				</section>
+				<section>
+					<h3>Die PiHole Blockliste</h3><br>
+					<img src="./images/blocked-pixel.png"\>
+				</section>
+				<section data-markdown>
+					### Quellen
+					* Netzpolitik 2017: https://netzpolitik.org/2017/wahlkampf-in-der-grauzone-die-parteien-das-microtargeting-und-die-transparenz/
+					* https://www.facebook.com/business/learn/facebook-ads-pixel
+					* https://targetleaks.de/index
+					* https://www.sciencedirect.com/science/article/pii/S0195925517303505
+				</section>
+
 			</div>
 		</div>
 
