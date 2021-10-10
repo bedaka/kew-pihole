@@ -126,3 +126,8 @@ select upstream dns provider: hier könnt ihr den DNS eurer wahl auswählen. wir
 hier kann die example static ip configuration verwendet werden. einfach die entsprechenden zeilen auskommentieren ("#" entfernen) und durch die IP adresse des pis ersetzen. diese kann mit dem command `ifconfig` ermittelt werden.
 
 -mukgKkr
+
+## Pi Hole Demo
+
+- Washington Post Seite mit aktivem und inaktivem PiHole laden
+- www.googletagmanager.com mit aktivem PiHole `dig`en (löst nach 0.0.0.0 auf)
