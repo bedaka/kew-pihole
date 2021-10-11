@@ -216,19 +216,32 @@
       </section>
 			<section data-auto-animate>
 			<section>
-				<h2>Auktion eines Werbeplatzes</h2>
-					<pre data-id="code-animation">
-						<div style="overflow-y: auto !important; height: 70vh; margin: auto">
+						<div style="overflow-y: auto !important; height: 100vh; margin: auto">
 							<img src="images/real-time-bidding.png" />
 						</div>
-					</pre>
 				</section>
 				<section>
 					<ul>
-						<li>[0.00s] J. öffnet eine URL und der Browser beginnt den Inhalt der Webseite zu laden</li>
-						<li>[0.04s] Die Webseite fragt an der Ad Exchange </li>
-						<li></li>
-						<li></li>
+						<li><em style="color: red">[0.00s]</em> J. öffnet eine URL und der Browser beginnt den Inhalt der Webseite zu laden</li>
+						<li><em style="color: red">[0.04s]</em> Die Webseite fragt die Ad Exchange an</li>
+						<li><em style="color: red">[0.08s]</em> Die Ad Exchange stellt einen Ad Request an mehrere DSPs</li>
+						<li><em style="color: red">[0.10s]</em> Die Werbebörse sende jeder DSP J. Profil und die Webseitenkategorie</li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li><em style="color: red">[0.12s]</em> Jede DSP reichert (wenn möglich) J. Profil weiter an</li>
+						<li><em style="color: red">[0.125s]</em> Jede DSP berechnet den optimalen Einsatz für den Werbetreibenden</li>
+						<li><em style="color: red">[0.13s]</em> Jede DSP meldet den gesetzten Preis an die Werbebörse zurück</li>
+						<li><em style="color: red">[0.14s]</em> Die Börse bestimmt den Gewinner aus den DSP Antworten</li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li><em style="color: red">[0.18s]</em> Die Werbebörse sendet den Preis und die Anzeige an den Ad-Server der Webseite</li>
+						<li><em style="color: red">[0.19s]</em> Der Ad-Server gibt dem Browser vor, welche Werbung er darstellen soll</li>
+						<li><em style="color: red">[0.23s]</em> Der Ad-Server sendet die Werbung an den Browser</li>
+						<li><em style="color: red">[0.31s]</em> Browser stellt Werbung des Auktionsgewinners dar und signalisiert der siegreichen DSP das die Werbung gesehen worden ist</li>
 					</ul>
 				</section>
 			</section>
