@@ -24,40 +24,47 @@
 					<h3>Werbefreies Heimnetzwerk mit dem RaspberryPi<h3>
 				</section>
 				<section>
-					<h2>Worüer wir sprechen</h2>
-					<ul>
-						<li>Warum AdBlocking?</li>
-						<li>Warum PiHole</li>
-						<li>Wie funktioniert das?</li>
-						<li>Kritik</li>
-						<li>...</li>
-					</ul>
+					Denied GIF
 				</section>
-				<section style="background-image: url('images/ag-link_logo.png'); background-repeat: no-repeat; background-position: right;">
-					<h2>Wer sind wir?</h2><br>
+				<section>
+					<h2>$ tree</h2>
+					<pre>
+						<code>
+							contents
+							├── 1_uber_uns.txt
+							├── adtracking
+							│   ├── 2_tracking_pixel.txt
+							│   └── 3_real_time_bidding.txt
+							├── pi_hole
+							│   ├── 4_allgemein.txt
+							│   ├── 5_about_dns.txt
+							│   └── 5_tech_demo.txt
+							├── 6_fazit.txt
+							└── 7_quellen.txt
+						</code>
+					</pre>
+			
+				</section>
+				<section style="background-image: url('images/ag-link_logo.png'); background-repeat: no-repeat; background-position: right; background-size: contain">
+					<div class="r-stack">
+						<h2 class="fragment fade-in-then-out">Wer sind wir?</h2>
+						<h2 class="fragment fade-in-then-out">AG Link</h2>
+					</div>
+					<p>AG für kritische Informatik an der Uni Leipzig</p>
           <ul>
-            <li><em>AG Link:</em> AG für kritische Informatik an der Uni Leipzig</li>
-            <li>Plenum immer Mittwochs 19:00 Uhr</li>
-            <li>Web: https://ag-link.xyz</li>
-            <li>Mail: ag-link@riseup.net</li>
+            <li>[Plenum] Mittwochs 19:00 Uhr</li>
+            <li>[Web] https://ag-link.xyz</li>
+            <li>[Mail] ag-link@riseup.net</li>
+						<li>[Matrix] #ag-link:ag-link.xyz</li>
           </ul>
 				</section>
 
 				<!-- Kapitel 1: Werbetracking -->
 
-				<section data-markdown="">
-					Wir alle haben uns an personalisierte Werbung und das dazugehörige Tracking gewöhnt.
-					Zwar sind die meisten (Studie zur Aktzeptanz?) eher ablehnend ggü. Werbung eingestellt, allerdings veranlasst es uns meistens nicht dazugehörige
-					unser Verhalten zu ändern. 
-					Ad Blocker erlauben zwar zumindest im Browser das surfen erträglicher zu machen, aber an vielemn Stellen haben wir keine Wahl.
-					Und so richtig wissen wir eigentlich nicht welche Daten durch wen gesammelt werden und was dann mit denen passiert.					
-				</section>
-				<section data-markdown>
-					Personalisierte Werbung wurde in den letzten Jahren so akkurat, dass sich das Gerücht etablierte, dass FB NutzerInnen über das Mikrofon belauscht.
-					Dies ist inzwischen weitestgehend wiederlegt, allerdings helfen andere Techniken dabei ein ähnlich akurates Ergbenis zu erzielen.
-				</section>
-				<section data-markdown>
-					## Cookies
+				<section>
+					<h2>🍪 Cookies</h2> 
+					<img class="fragment fade-up" src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fuser-images.githubusercontent.com%2F38752255%2F93235175-7ab6e280-f77d-11ea-9b8a-5a8c144344d7.gif&sp=1633978194Tf5ece8f0a296a91cf81989c86c384ccd138bee0b1ba8f728cd3f7ce6ecafd823" />
+					<aside class="notes">muss man wenig sagen. Wir alle kennen die Banner</aside>
 				</section>
 				<!--Tracking Pixel-->
 				<section data-auto-animate data-background="whitesmoke">
@@ -75,11 +82,11 @@
 				<section>
 					<h2>Tracking Pixel</h2>
 					<ul>
-						<li>1x1 großes Bild als Code im HTML der Webseite oder E-Mail. </li>
+						<li>1x1 Pixel großes Bild im Code der Webseite (E-Mail). </li>
 						<li>Registriert Nutzerverhalten</li>
 					</ul>
-					
-					Klassisch ist dies ein einfaches HTML Tag:
+					<br>
+					<p>Klassisch ist dies ein einfaches HTML Tag:</p>
 					<pre><code>
 					<img style="display: none;" src="/tracking">
 					</code></pre>
@@ -88,33 +95,28 @@
 						Werden heutzutagen eigentlich überall eingesetzt
 						können sowohl auf Websites als auch in HTML Emails eingebunden werden
 					</aside>		
-				</section>
-
-				<section>
-					Wobei heutzutage in der Regel JavaScript pixels verwendet werden
-					<pre><code>
-					<script type="text/javascript" src="tracking.js"></script>
-					</code></pre>
-				</section>
-					
+				</section>					
 				<section>
 				<section id="fragments" >
-					<h2>Tracking Pixel</h2>
+					<h2>Gesammelt werden:</h2>
 					<ul>
-						<li  style="display: inline-block;" class="fragment fade-up">* IP Adresse (Liefert Informationen zu eurem ISP)</li>
-						<li  style="display: inline-block;" class="fragment fade-up">* Browser (Chrome, Firefox, etc.)</li>
-						<li  style="display: inline-block;" class="fragment fade-up">* Geräte Typ (Mobile, Desktop, Tablet)</li>
-						<li  style="display: inline-block;" class="fragment fade-up">* Operating System (iOS, Android, Windows, etc.)</li>
-						<li  style="display: inline-block;" class="fragment fade-up">* Bildschirmgröße</li>
-						<li  style="display: inline-block;" class="fragment fade-up">* Referrer (Von wo aus ihr auf die Seite gelangt seit)</li>
+						<li class="fragment fade-up">IP Adresse (Liefert Informationen zu eurem ISP)</li>
+						<li class="fragment fade-up">Browser (Chrome, Firefox, etc.)</li>
+						<li class="fragment fade-up">Geräte Typ (Mobile, Desktop, Tablet)</li>
+						<li class="fragment fade-up">Betriebssystem (iOS, Android, Windows, etc.)</li>
+						<li class="fragment fade-up">Bildschirmgröße</li>
+						<li class="fragment fade-up">Referrer (Von wo aus ihr auf die Seite gelangt seit)</li>
 					</ul>
 				</section>
+				
 				<section>
 					<h2>Außerdem</h2>
-					- Messen von Verhalten und "conversions"
-					- Beavioural retargeting ermöglichen
-					- BetreiberInnen profitieren von Insights und Metriken
-					- Anbieter profitieren von Daten
+					<ul>
+						<li>Messen von Verhalten und "conversions"</li>
+						<li>Beavioural retargeting ermöglichen</li>
+						<li>BetreiberInnen profitieren von Insights und Metriken</li>
+						<li>Anbieter profitieren von Daten</li>
+					</ul> 
 					<aside class="notes">
 						-> Für Website BetreiberInnen lohnt sich der Einsatz, da so Metriken über Demografie und Verhalten der NutzerInnen verfügbar werden.
 						-> erlauben behavioural retargeting
@@ -205,16 +207,25 @@
             <li>uvm.</li>
           </ul>
         </section>
-
-        
       </section>
-
 			<section data-auto-animate>
+			<section>
 				<h2>Auktion eines Werbeplatzes</h2>
 					<pre data-id="code-animation">
-							<img src="images/real-time-bidding.png">
+						<div style="overflow-y: auto !important; height: 70vh; margin: auto">
+							<img src="images/real-time-bidding.png" />
+						</div>
 					</pre>
 				</section>
+				<section>
+					<ul>
+						<li>[0.00s] J. öffnet eine URL und der Browser beginnt den Inhalt der Webseite zu laden</li>
+						<li>[0.04s] Die Webseite fragt an der Ad Exchange </li>
+						<li></li>
+						<li></li>
+					</ul>
+				</section>
+			</section>
 				<section data-markdown>
 					## Auswirkungen von micro targeting?
 						- ermöglicht manipulation (cambridge analytica)
