@@ -99,8 +99,7 @@ Part 1: Ein Betriebssystem auf dem Pi installieren und eine Verbindung aufbauen.
     5.2. Zeit uns mit dem PI zu verbinden! In einem Terminal auf eurem PC gibst du:
       `ssh pi@<ip-adresse-des-pi>` ein, um die SSH verbindung aufzubauen.
       Bei der frage ob der Fingerprint hinzugefügt werden soll <yes> antworten.
-      wenn jetzt eine Warnung kommt "known host" **Das noch ausführen**
-
+      
     5.3. `raspberry` als password eingeben
     
 **Herzlichen Glückwunsch** du hast jetzt ein Betriebsystem auf deinem Pi eingerichtet 
