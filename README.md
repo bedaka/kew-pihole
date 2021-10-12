@@ -67,7 +67,8 @@ In [diesem Artikel](https://medium.com/swlh/how-to-set-up-pi-hole-2293246dc8ed) 
 
 Ein ausführliche Installationsanleitung ist auch auf der [offiziellen Pi-hole Website zu finden](https://github.com/pi-hole/pi-hole/#one-step-automated-install)
 
-
+### Setup mit unbound (einer rekursiver DNS)
+[Beschrieben in den offiziellen Doks](https://docs.pi-hole.net/guides/dns/unbound/)
 
 ## Quellen
 

@@ -70,8 +70,14 @@
 
 				<section>
 					<h2>🍪 Cookies</h2> 
-					<img class="fragment fade-up" src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fuser-images.githubusercontent.com%2F38752255%2F93235175-7ab6e280-f77d-11ea-9b8a-5a8c144344d7.gif&sp=1633978194Tf5ece8f0a296a91cf81989c86c384ccd138bee0b1ba8f728cd3f7ce6ecafd823" />
-					<aside class="notes">muss man wenig sagen. Wir alle kennen die Banner</aside>
+					<img class="fragment fade-up" src="https://user-images.githubusercontent.com/38752255/93235175-7ab6e280-f77d-11ea-9b8a-5a8c144344d7.gif" />
+					<aside class="notes" data-markdown="">
+						* muss man wenig sagen. Wir alle kennen die Banner
+						* Speichern lokal Details zu eurem Besuch bei einer Webseite (SessionID)
+						* Beschränkt auf die eingene Webseite -> Thrid party Cookies
+
+						Und hier wird es spannend. So gibt es zum beispiel sogenannt. TrackingPixel
+					</aside>
 				</section>
 				<!--Tracking Pixel-->
 				<section data-auto-animate data-background="whitesmoke">
@@ -79,6 +85,14 @@
 					<div class="r-hstack justify-center">
 						<div data-id="box1" style="background: #191919; width: 40px; height: 40px; margin: 10px;"></div>
 					</div>
+					<aside class="notes" data-markdown>
+						Wirklich interessant werden die gesammelten informationen erst im kontext. 
+						Betreiber verknüpfen mit 
+						- Verhalten
+						- Informationen anderer Webseiten (wo kommst du her, wo gehst du hin?)
+						
+						schauen wir uns das genauer an:
+					</aside>
 				</section>
 				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
 					<h2 style="color: #191919;">Tracking Pixel</h2>
@@ -93,16 +107,18 @@
 						<ul>
 							<li>1x1 Pixel großes Bild im Code der Webseite (E-Mail). </li>
 							<li>Registriert Nutzerverhalten</li>
+							<li>Gebunden an eine Aktion</li>
 						</ul>
 						<br>
 						<p>Klassisch ist dies ein einfaches HTML Tag:</p>
 						<pre><code>
 							<img style="display: none;" src="/tracking">
 						</code></pre>
-						<aside class="notes">
-							1x1 pixel großes Bild das durch Code innerhalb des HTML der Webseite erzeugt wird.
-							Werden heutzutagen eigentlich überall eingesetzt
-							können sowohl auf Websites als auch in HTML Emails eingebunden werden
+						<aside class="notes" data-markdown>
+							* Werden heutzutagen eigentlich überall eingesetzt
+							* können sowohl auf Websites als auch in HTML Emails eingebunden werden
+							* Wenn jemand 1 Artikel in Warenkorb legt -> Pixel lößt aus
+							* Ermöglichen messen von ROI
 						</aside>		
 					</section>					
 					
@@ -118,17 +134,24 @@
 						</ul>
 					</section>
 					<section>
-						<h2>Außerdem</h2>
+						<h2>Das Ergebnis:</h2>
 						<ul>
-							<li>Messen von Verhalten und "conversions"</li>
-							<li>Beavioural retargeting ermöglichen</li>
-							<li>BetreiberInnen profitieren von Insights und Metriken</li>
-							<li>Anbieter profitieren von Daten</li>
+							<li class="fragment fade-up">Nachvollziehbares Verhalten sog. "conversions"</li>
+							<li class="fragment fade-up">Beavioural retargeting</li>
+							<li class="fragment fade-up">Cross-site tracking</li>
+							<li class="fragment fade-up">Insights und Metriken für BetreiberInnen</li>
+							<li class="fragment fade-up">Mehr Daten für Werbeplattformen</li>
 						</ul> 
 						<aside class="notes">
 							-> Für Website BetreiberInnen lohnt sich der Einsatz, da so Metriken über Demografie und Verhalten der NutzerInnen verfügbar werden.
 							-> erlauben behavioural retargeting
 							-> FB profitiert in Form zusätzlicher Daten. 
+							
+							während das ganze also eine recht simple aber dafür sehr effektive Methode für Werbetreibende ist, ermöglichen diese Pixel es, schon ein sehr viel weiter reichendes Bild von NutzerInnen zu zeichnen als das bloß mit cookies der Fall wäre. Mögliche Rückschlüsse des Nutzerverhaltens umfassen:
+							* Wer hat wann welche Anzeige gesehen
+							* Hat das Anklicken einer Anzeige zum Abschluss eines Kaufs geführt?
+							* welche demografischen Merkmale haben Nutzer mit einer hohen Absprungrate 
+							-> Datenschutzerklärung ist notwendig
 						</aside>
 					</section>
 					<section>
@@ -368,7 +391,11 @@
 					<section>
 						<h2>PiHole Setup</h2>
 						<img src="images/pihole_dns.png">
-						<p></p>
+						<aside class="notes" data-markdown>
+							* forwarding DNS-Server (gibt sich aus)
+							* filtert allerdings nur black & whitelist
+							* gibt Anfrage dann weiter an DNS Resolver
+						</aside>
 					</section>
 					<section>
 						<h2>Features</h2>
