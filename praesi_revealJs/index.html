@@ -361,16 +361,45 @@
 						</aside>
 					</section>
 				</section>
-
+				
 				<section>
-					<h2>PiHole Setup</h2>
-					<img src="images/pihole_dns.png">
-					<p></p>
+					<section>
+						<h2>PiHole Setup</h2>
+						<img src="images/pihole_dns.png">
+						<p></p>
+					</section>
+					<section>
+						<h2>Features</h2>
+						<ul>
+							<li>Schützt jedes Gerät im Netzwerk</li>
+							<li>Blockt auch innerhalb von Apps</li>
+							<li>Verbessert Performance</li>
+							<li>Blockt auch Malware</li>
+							<li>Listen sind beliebig erweiterbar</li>
+							<li>Monitoring</li>
+						</ul>
+						<aside class="notes">
+							auch domains des Staatstrojaner "Pegasus" können geblockt werden.
+						</aside>
+					</section>
+					<section>
+						<h2>Probleme mit DNS</h2>
+						<ul>
+							<li>DNS-Spoofing</li>
+							<li>DNS-Hijacking</li>
+							<li>Unser DNS kennt unsere Surfhistorie</li>
+						</ul>
+						<aside class="notes">
+							- attraktives Ziel für Angriffe
+							- Spoofing: Cache wird verändert oder mit Kommunikation interferiert. (Man in the middle)
+							- Hijacking: DNS ist kompromittiert / bösartig 
+						</aside>
+					</section>
 				</section>
 
 				<section>
 					<section>
-						<h2>PiHole Unbound</h2>
+						<h2>PiHole mit Unbound</h2>
 						<p>Unbound = rekursiver DNS-Server zum selberhosten.</p><br>
 						<ul>
 							<li>mehr Privatsphäre</li>
@@ -388,15 +417,7 @@
 				
 				<section data-background="./images/uptempo.gif">
 					<img src="https://wp-cdn.pi-hole.net/wp-content/uploads/2018/12/pihole-text-logo-white.png.webp" alt="pihole logo"  style="height: 120px; margin: 0 auto 4rem auto; background: transparent;" class="pihole-logo"> 	
-				</section>
-
-				<section>
-					<h3>Features</h3>
-					<img src="images/features.png" alt="pihole features"  style="height: 260px; margin: 0 auto 4rem auto; background: transparent;">
-				</section>
-				<section>
-					<h3>Die PiHole Blockliste</h3><br>
-					<img src="./images/blocked-pixel.png"\>
+					<p class="citation">Logo: https://wp-cdn.pi-hole.net/wp-content/uploads/2018/12/pihole-text-logo-white.png.webp</p>
 				</section>
 				<section data-background="./images/fazit.gif">
 					<aside class="notes">
@@ -410,13 +431,15 @@
 						<img src="./images/githubw.png" alt="github"  style="height: 120px; margin: 0 auto 4rem auto; background: transparent;">
 					</a><p>[GitHub] ~  https://github.com/bedaka/kew-pihole</p>
 				</section>
-				<section data-markdown>
-					## Quellen 1/2
-					* Netzpolitik 2017: https://netzpolitik.org/2017/wahlkampf-in-der-grauzone-die-parteien-das-microtargeting-und-die-transparenz/
-					* https://www.facebook.com/business/learn/facebook-ads-pixel
-					* https://targetleaks.de/index
-					* https://www.sciencedirect.com/science/article/pii/S0195925517303505
-					* Schnabel, Patrick (??): Netzwerktechnikk-Fibel
+				<section>
+					<h2>Quellen 1/2</h2>
+					<ul>
+						<li>Netzpolitik 2017: https://netzpolitik.org/2017/wahlkampf-in-der-grauzone-die-parteien-das-microtargeting-und-die-transparenz/</li>
+						<li>https://www.facebook.com/business/learn/facebook-ads-pixel</li>
+						<li>https://targetleaks.de/index</li>
+						<li>https://www.sciencedirect.com/science/article/pii/S0195925517303505</li>
+						<li>Schnabel, Patrick: Netzwerktechnikk-Fibel</li>
+					</ul>
 				</section>
 				<section>
 					<h2>Quellen 2/2</h2>
@@ -424,6 +447,7 @@
 						<li><em>Update report into adtech real time bidding</em>; ICO</li>
 						<li><em>Selling Off Privacy at Auction</em>; Lukasz Olejnik, Minh-Dung Tran, Claude Castelluccia</li>
 						<li><em>To bid or not to bid? - Measuring the value of privacy in RTB</em>; Lukasz Olejnik, Claude Castelluccia</li>
+						<li>Blocklisten für "Pegasus": https://www.youtube.com/watch?v=uk1Z7kshxPA</li>
 					</ul>
 				</section>
 		
