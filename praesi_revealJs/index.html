@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>AdBlocking mit Pi-hole</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -151,6 +151,10 @@
           </ul>
         </section>
 
+				<section data-background="images/Adservingfull.svg" data-background-size="contain" data-background-color="#fdf6e3">
+					
+				</section>
+
         <section>
           <img src="./images/rtb.png">
         </section>
@@ -158,10 +162,9 @@
         <section>
           <h2>Wichtige Organisationen</h2>
           <ul>
-            <li>Internet Advertising Bureau (IAB)</li>
+            <li>Interactive Advertising Bureau (IAB)</li>
             <ul>
               <li>OpenRTB</li>
-              <li>Transparency and Consent Framework (TCF)</li>
             </ul>
             <li>Google</li>
             <ul>
@@ -209,17 +212,12 @@
         </section>
       </section>
 			<section data-auto-animate>
-			<section>
-						<div style="overflow-y: auto !important; height: 100vh; margin: auto">
-							<img src="images/real-time-bidding.png" />
-						</div>
-				</section>
 				<section>
 					<ul>
 						<li><em style="color: red">[0.00s]</em> J. öffnet eine URL und der Browser beginnt den Inhalt der Webseite zu laden</li>
-						<li><em style="color: red">[0.04s]</em> Die Webseite fragt die Ad Exchange an</li>
-						<li><em style="color: red">[0.08s]</em> Die Ad Exchange stellt einen Ad Request an mehrere DSPs</li>
-						<li><em style="color: red">[0.10s]</em> Die Werbebörse sende jeder DSP J. Profil und die Webseitenkategorie</li>
+						<li><em style="color: red">[0.04s]</em> Die Webseite fragt die Werbebörse an</li>
+						<li><em style="color: red">[0.08s]</em> Die Werbebörse stellt einen Ad Request an mehrere DSPs</li>
+						<li><em style="color: red">[0.10s]</em> Die Werbebörse sendet jeder DSP J. Profil und die Webseitenkategorie</li>
 					</ul>
 				</section>
 				<section>
@@ -245,6 +243,7 @@
 				</section>
 				<section data-markdown>
 					# Micro targeting
+
 					> In der Bundestagswahl 2021 nutzten alle etablierten parteien Microtargeting im Wahlkampf. (Netzpolitik 2017)
 
 					Die FDP schaltete bspw. Facebook-Werbungen, die sie abhängig von der Zielgruppe für oder gegen staatliche CO2-Limits positionierten. ("grüne Interessen", "Vielreisende").
@@ -253,7 +252,8 @@
 				</section>
 				<section data-markdown>
 					## Energieverbrauch
-					Der Stromverbrauch des Webenetzwerkes wird je nach Quelle auf 
+
+					Der Stromverbrauch von Onlinewerbung wird je nach Quelle auf 
 					um die 110TWH / Jahr geschätzt.
 					https://www.sciencedirect.com/science/article/pii/S0195925517303505
 				</section>
@@ -264,10 +264,12 @@
 
 				<section data-markdown>
 					## Ad AdBlocking
+
 					Wie können wir unsere privatspäre schützen / kontrolle über unsere Daten erlangen? 
 				</section>
 				<section data-markdown>
 					## Browser plugins
+
 					* Einfach einzurichten
 					* Funktionieren nur im Browser
 					* nicht auf jedem Gerät verfügbar (Smart TV, Innerhalb von Apps)
