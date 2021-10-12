@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>AdBlocking mit Pi-hole</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -182,6 +182,10 @@
           </ul>
         </section>
 
+				<section data-background="images/Adservingfull.svg" data-background-size="contain" data-background-color="#fdf6e3">
+					
+				</section>
+
         <section>
           <img src="./images/rtb.png">
         </section>
@@ -189,10 +193,9 @@
         <section>
           <h2>Wichtige Organisationen</h2>
           <ul>
-            <li>Internet Advertising Bureau (IAB)</li>
+            <li>Interactive Advertising Bureau (IAB)</li>
             <ul>
               <li>OpenRTB</li>
-              <li>Transparency and Consent Framework (TCF)</li>
             </ul>
             <li>Google</li>
             <ul>
@@ -240,17 +243,12 @@
         </section>
       </section>
 			<section data-auto-animate>
-			<section>
-						<div style="overflow-y: auto !important; height: 100vh; margin: auto">
-							<img src="images/real-time-bidding.png" />
-						</div>
-				</section>
 				<section>
 					<ul>
 						<li><em style="color: red">[0.00s]</em> J. öffnet eine URL und der Browser beginnt den Inhalt der Webseite zu laden</li>
-						<li><em style="color: red">[0.04s]</em> Die Webseite fragt die Ad Exchange an</li>
-						<li><em style="color: red">[0.08s]</em> Die Ad Exchange stellt einen Ad Request an mehrere DSPs</li>
-						<li><em style="color: red">[0.10s]</em> Die Werbebörse sende jeder DSP J. Profil und die Webseitenkategorie</li>
+						<li><em style="color: red">[0.04s]</em> Die Webseite fragt die Werbebörse an</li>
+						<li><em style="color: red">[0.08s]</em> Die Werbebörse stellt einen Ad Request an mehrere DSPs</li>
+						<li><em style="color: red">[0.10s]</em> Die Werbebörse sendet jeder DSP J. Profil und die Webseitenkategorie</li>
 					</ul>
 				</section>
 				<section>
