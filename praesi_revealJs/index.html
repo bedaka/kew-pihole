@@ -23,9 +23,10 @@
 					</a>
 					<h3>Werbefreies Heimnetzwerk mit dem RaspberryPi<h3>
 				</section>
-				<section>
-					Denied GIF
+				<section data-background="./images/denied.gif">
+					<h3>StuRa</h3>
 				</section>
+
 				<section>
 					<h2>$ tree</h2>
 					<pre>
@@ -43,26 +44,26 @@
 							└── 7_quellen.txt
 						</code>
 					</pre>
-			
 				</section>
+
 				<section style="background-image: url('images/ag-link_logo.png'); background-repeat: no-repeat; background-position: right; background-size: contain">
 					<div class="r-stack">
 						<h2 class="fragment fade-in-then-out">Wer sind wir?</h2>
 						<h2 class="fragment fade-in-then-out">AG Link</h2>
 					</div>
 					<p>AG für kritische Informatik an der Uni Leipzig</p>
-          <ul>
-            <li>[Plenum] Mittwochs 19:00 Uhr</li>
-            <li>[Web] https://ag-link.xyz</li>
-            <li>[Mail] ag-link@riseup.net</li>
-						<li>[Matrix] #ag-link:ag-link.xyz</li>
-          </ul>
-		  		<aside class="notes">
-					Die AG gibt es seit 2018
-					Wir sind Studierende ex und post und Menschen die Intesse an den Auswirkungen von Informatik und Digitalisierung auf gesellschaftlihce & pol. Fragen haben.
-					Info zu studieren oder programmieren zu können explizit KEINE voraussetzung
-					Interesse oder Ideen für themen? kommt vorbei!
-				</aside>
+					<ul>
+						<li>[Plenum] Mittwochs 19:00 Uhr</li>
+						<li>[Web] https://ag-link.xyz</li>
+						<li>[Mail] ag-link@riseup.net</li>
+									<li>[Matrix] #ag-link:ag-link.xyz</li>
+					</ul>
+					<aside class="notes">
+						Die AG gibt es seit 2018
+						Wir sind Studierende ex und post und Menschen die Intesse an den Auswirkungen von Informatik und Digitalisierung auf gesellschaftlihce & pol. Fragen haben.
+						Info zu studieren oder programmieren zu können explizit KEINE voraussetzung
+						Interesse oder Ideen für themen? kommt vorbei!
+					</aside>
 				</section>
 
 				<!-- Kapitel 1: Werbetracking -->
@@ -85,6 +86,7 @@
 						<div data-id="box1" style="width: 2000px; height: 1000px; margin: 100%px;"></div>
 					</div>
 				</section>
+
 				<section>
 					<section>
 						<h2>Tracking Pixel</h2>
@@ -245,55 +247,147 @@
 					</ul>
 				</section>
 			</section>
-				<section data-markdown>
-					## Auswirkungen von micro targeting?
-						- ermöglicht manipulation (cambridge analytica)
-				</section>
-				<section data-markdown>
-					# Micro targeting
-					> In der Bundestagswahl 2021 nutzten alle etablierten parteien Microtargeting im Wahlkampf. (Netzpolitik 2017)
+			<section>
+				<h2>Why bother?</h2>
+				<ul>
+					<li class="fragment fade-left">Vereinfachen von Manipulation</li>
+					<li class="fragment fade-left">Energieverbrauch v. Werbenetzwerken</li>
+					<li class="fragment fade-left"> ... </li>
+				</ul>
+				<br>
+				<p class="fragment fade-left">https://www.sciencedirect.com/science/article/pii/S0195925517303505</p>
 
-					Die FDP schaltete bspw. Facebook-Werbungen, die sie abhängig von der Zielgruppe für oder gegen staatliche CO2-Limits positionierten. ("grüne Interessen", "Vielreisende").
+				<aside class="notes" data-markdown>
+					Neben offensichtl. Argument der Privatsphäre gibt es noch weitere Gründe, warum das nicht so cool ist.
 					
-					
-				</section>
-				<section data-markdown>
-					## Energieverbrauch
-					Der Stromverbrauch des Webenetzwerkes wird je nach Quelle auf 
+					1. Ermöglicht manipulation (cambridge analytica) Je genauer das Bild desto effektiver
+						(Wahlkampf 2021 - alle etablierten Parteien nutzten Microtargeting. (Netzpolitik 2017)
+						FDP ("grüne Interessen", "Vielreisende").
+					2. Energieverbrauch: Der Stromverbrauch des Webenetzwerkes wird je nach Quelle auf 
 					um die 110TWH / Jahr geschätzt.
-					https://www.sciencedirect.com/science/article/pii/S0195925517303505
-				</section>
-				
-				
 
-				<!-- Adblocking mit PiHole -->
+					um nur mal zwei aspekte zu nennen, euch fallen sicher noch weitere ein.
+				</aside>
+			</section>
 
-				<section data-markdown>
-					## Ad AdBlocking
-					Wie können wir unsere privatspäre schützen / kontrolle über unsere Daten erlangen? 
-				</section>
-				<section data-markdown>
-					## Browser plugins
-					* Einfach einzurichten
-					* Funktionieren nur im Browser
-					* nicht auf jedem Gerät verfügbar (Smart TV, Innerhalb von Apps)
-				</section>
-
+			<!-- Adblocking mit PiHole -->
 				<section>
-					<h2>DNS who?</h2>
-					<img src="images/dnsExplained.jpg">
-					<p>Domain Name System</p>
+					<h2>Ad Blocking</h2>
+					<img src="./images/adblocked.png" style="width: 70vh;">
+					<p class="citation">Quelle: http://marketingland.com/wp-content/ml-loads/2015/09/ad-blocked3-ss-1920.png</p>
+					<aside class="notes" data-markdown>
+						eigentlicher Anlass unseres Vortrags:
+						
+						* was können wir selbst tun, wenn wir unsere Daten und unser surfverhalten lieber für uns behalten wollen?
+					</aside>
+				</section>
+				<section>
+					<h2>Browser plugins</h2>
+					<ul>
+						<li class="fragment fade-right">Einfach einzurichten</li>
+						<li class="fragment fade-right">Beschränkt auf jeweil. Browser</li>
+						<li class="fragment fade-right">Nicht überall verfügbar (Smart TV, Innerhalb von Apps)</li>
+						<li class="fragment fade-right">Langweilig</li>
+					</ul>
+					<aside class="notes" data-markdown>
+						Das offensichtlichste Tool, sicher auch die meisten nutzen
+					</aside>
+				</section>
+				<section>
+					<section data-background="./images/blackhole.gif">
+						<h2 class="fragment fade-down">PiHole</h2>
+						<br><br><br><br><br><br><br><br>
+						<p class="citation">Quelle: https://media.giphy.com/media/SVCSsoKU5v6ZJLk07n/giphy.gif</p>
+						<aside class="notes" data-markdown>
+							Viel cooler wäre es doch, wenn wir uns auf unseren geräten überhaupt nicht mehr mit irgendwelchen plugins rumärgern müssten.
+
+							Quasi ein schwarzes loch für werbung
+						</aside>
+					</section>
+					<section>
+						<h2>Was ist ein PiHole?</h2>
+						<h3 class="fragment fade-up">= DNS-Sinkhole</h3>
+						<div style="overflow: hidden;" >
+							<div style="display: inline-block; padding-right: 50px;"><img src="images/raspberry.jpeg" style="width: 250px; " /></div>
+							<div style="display: inline-block; padding: 50px; vertical-align: top;"><h3>+</h3></div>
+							<div style="display: inline-block; vertical-align: top; padding: 30px;"><img class="box" src="https://wp-cdn.pi-hole.net/wp-content/uploads/2018/12/pihole-text-logo-white.png.webp" style="width: 250px;"/></div>
+						</div>
+						<br>
+						<p class="citation">Quelle: https://hackaday.com/wp-content/uploads/2015/02/pibig.jpg</p>
+						<aside class="notes" data-markdown>
+							* Ein pi hole ist ein Werbefilter für eurer WLAN.
+							* "pi hole" = eine OpenSource software
+							* Der Name "Pi" kommt von raspberryPi - einem microcomputer (der sich in eurem WLAN befindet)
+							* Euer router wird so konfiguriert, dass er jede anfrage erstmal an den pi sendet, der dann entscheidet ob sie durch darf oder nicht.
+							-> Man spricht auch von einem DNSSinkhole
+							Um zu verstehen wie genau das funktioniert müssen wir erst verstehen was DNS ist.
+						</aside>
+					</section>					
 				</section>
 				
 				<section>
 					<section>
-						<h2>PIHole Unbound</h2>
-						Hostet euren eigenen rekursiven DNS-Server
-						+ mehr Privatsphäre
-						+ erhöter Schutz vor DNS-Spoofing/Hijacking Angriffen
-						- Erstmalige Aufrufe neuer Adressen haben eine kurze Verzögerung
+						<h2>Was ist DNS?</h2>
+						<div class="r-stack">
+							<em class="fragment fade-down">= Domain Name System</em>
+							<img src="./images/telefonbuch.jpeg" width="450" height="300" class="fragment">
+						</div>
+						<p class="citation">Bild: https://www.sueddeutsche.de/image/sz.1.2720968/1200x675?v=1519611738</p>
+						<aside class="notes" data-markdown>
+							Wie Telefonbuch: Zuständig für Umwandlung von Namen, die sich Menschen merken können zu eindeutigen Adressen.
+							jedesmall wenn eine Webseite im Browser eingeben "www.google.de" wird zuerst dieser "DNS-Name" in eine IP-Adresse umgewandelt 
+						</aside>
+					</section>
+					<section>
+						<h2>DNS im OSI-Modell</h2>
+						<br>
+						<div style="background-color: whitesmoke; align-content: center; margin-left: 15%; width: 700px">
+							<img src="images/osi.png"/>
+						</div>
+						<p class="citation">Bild: https://de.wikipedia.org/wiki/OSI-Modell#/media/Datei:ISO-OSI-7-Schichten-Modell(in_Deutsch).svg</p>
+					</section>
+					<section>
+						<p>Wo finde ich <em>www.ag-link.xyz</em> ?</p>
+						<img src="images/dnsExplained.jpg" class="fragment fade-up"/>
+						<p class="fragment fade-up">Wo finde ich <em>.xyz.ag-link.www</em> ?</p>
+						
+						<aside class="notes" data-markdown>
+							* DNS kennt keine zentrale Datenbank /basiert auf großen Zahl von Nameservern.
+							Zuerst fragen wir unseren PrimaryDNS (zb. Google 8.8.8.8)
+							Rekursive auflösung
+							1. Root-Nameserver (Rootserver):
+								lösen top-level domain auf (.de, .com)	
+								13 Stück (10 in USA, London, Tokio, Stockholm); 
+							2. Der Namespace löst dann die SecondLvl Domain auf (und ggf. weitere Subdomains)
+							3. host (.www, .mp3, .blog)
+						</aside>
 					</section>
 				</section>
+
+				<section>
+					<h2>PiHole Setup</h2>
+					<img src="images/pihole_dns.png">
+					<p></p>
+				</section>
+
+				<section>
+					<section>
+						<h2>PiHole Unbound</h2>
+						<p>Unbound = rekursiver DNS-Server zum selberhosten.</p><br>
+						<ul>
+							<li>mehr Privatsphäre</li>
+							<li>erhöter Schutz vor DNS-Spoofing/Hijacking Angriffen</li>
+							<li>Erstmalige Aufrufe neuer Adressen haben eine kurze Verzögerung</li>
+						</ul>
+					</section>
+					<section>
+						<h2>PiHole mit Unbound</h2>
+						<img src="images/unbound2.png">
+						<p></p>
+					</section>
+				</section>
+				
+				
 				<section data-background="./images/uptempo.gif">
 					<img src="https://wp-cdn.pi-hole.net/wp-content/uploads/2018/12/pihole-text-logo-white.png.webp" alt="pihole logo"  style="height: 120px; margin: 0 auto 4rem auto; background: transparent;" class="pihole-logo"> 	
 				</section>
@@ -311,7 +405,13 @@
 						pihole gut um sich mal bewusst zu machen was da alles 
 					</aside>
 				</section>
-
+				<section>
+					<h2>Nachlesen und selber basteln:</h2>
+					<br>
+					<a>
+						<img src="./images/githubw.png" alt="github"  style="height: 120px; margin: 0 auto 4rem auto; background: transparent;">
+					</a><p>[GitHub] ~  https://github.com/bedaka/kew-pihole</p>
+				</section>
 				<section data-markdown>
 					## Quellen 1/2
 					* Netzpolitik 2017: https://netzpolitik.org/2017/wahlkampf-in-der-grauzone-die-parteien-das-microtargeting-und-die-transparenz/
@@ -321,16 +421,12 @@
 					* Schnabel, Patrick (??): Netzwerktechnikk-Fibel
 				</section>
 				<section>
-
-				</section>
-
-				<section>
 					<h2>Quellen 2/2</h2>
-				<ul>
-					<li><em>Update report into adtech real time bidding</em>; ICO</li>
-					<li><em>Selling Off Privacy at Auction</em>; Lukasz Olejnik, Minh-Dung Tran, Claude Castelluccia</li>
-					<li><em>To bid or not to bid? - Measuring the value of privacy in RTB</em>; Lukasz Olejnik, Claude Castelluccia</li>
-				</ul>
+					<ul>
+						<li><em>Update report into adtech real time bidding</em>; ICO</li>
+						<li><em>Selling Off Privacy at Auction</em>; Lukasz Olejnik, Minh-Dung Tran, Claude Castelluccia</li>
+						<li><em>To bid or not to bid? - Measuring the value of privacy in RTB</em>; Lukasz Olejnik, Claude Castelluccia</li>
+					</ul>
 				</section>
 		
 	</div>

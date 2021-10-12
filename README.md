@@ -2,60 +2,9 @@
 
 Sammlung der Inhalte und Präsentation für das Thema PiHole auf der KEW 2021
 
+## Über die AG Link
 
-## ToDo
-
-* [X] Talk bei KEW anmelden 
-  - [X] Veranstaltungstext ausformulieren
-  - [X] Sollen wir den Vortrags-Teil hybrid machen oder nur für Anwesende?
-
-* [X] Preis für raspi zero recherchieren
-* [X] Anzahl bestellten // TeilnehmerInnen Anzahl begrenzen oder first comes first serves und dann Gruppen bilden für praktischen Teil?
-* [X] Antrag für Kostenübernahme stellen
-
-* [ ] Präsentation zu revealmd umziehen
-* [ ] Anleitung zum Aufsetzen des Pi schreiben (in diesem Readme) 
-* [ ] Vortrag "Einführung in WWW" ausformulieren
-
-
-## Raspberry Pi Zero Vertrieb
-
-  - Ali Express
-    - https://www.aliexpress.com/item/32566751770.html - 15,72€
-
-
-## Gliederung - [Entwurf]
-1. Intro (AG-Link vorstellen)
-2. Werbetracking
-  * Wie funktioniert Tracking
-    * Tracking Pixel (Bene)
-    * RTB (Lukas)
-  * Main Player (Firmen, tracker, aggregation und Verkauf von Daten) (Bene)
-  * Why should I care?
-    * Privatsphäre
-    * Misbrauch / Unklare Verwendung -> Versicherungen?
-    * Manipulation
-3. Was tun?
-  * AddBlocker Plugins
-    * Wo liegen Grenzen?
-      * decken nicht alle geräte ab...
-  * PiHole
-    * Überblick (OpenSource, Microcomputer...)
-    * Technischer Hintergrund
-      - Funktionsweise
-      - DNS
-      - Blocking Listen
-        - Wer betreibt diese Listen
-        - kann man die einfach kombinieren?
-    * Pros / Features
-    * Downsides / Was sollte beachtet werden? 
-4. Praktischer Teil
-   - An dieser stelle wäre der Workshop gewesen
-   - Existierendes Setup zeigen (Screensharing)
-5. Abschluss
-  * Repo (public),
-  * Termin & Kontakt AG 
-  * Quellen
+Du findest uns hier: https://ag-link.xyz/
 
 
 ## Quellen
@@ -124,9 +73,3 @@ select upstream dns provider: hier könnt ihr den DNS eurer wahl auswählen. wir
 /etc/dhcpcd.conf
 hier kann die example static ip configuration verwendet werden. einfach die entsprechenden zeilen auskommentieren ("#" entfernen) und durch die IP adresse des pis ersetzen. diese kann mit dem command `ifconfig` ermittelt werden.
 
--mukgKkr
-
-## Pi Hole Demo
-
-- Washington Post Seite mit aktivem und inaktivem PiHole laden
-- www.googletagmanager.com mit aktivem PiHole `dig`en (löst nach 0.0.0.0 auf)
