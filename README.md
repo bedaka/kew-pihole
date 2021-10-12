@@ -2,6 +2,9 @@
 
 Sammlung der Inhalte und Präsentation für das Thema PiHole auf der KEW 2021
 
+## Über die AG Link
+
+Du findest uns hier: https://ag-link.xyz/
 
 ## Kompatible Modelle
   - Raspberry Pi Zero W
@@ -71,3 +74,5 @@ Ein ausführliche Installationsanleitung ist auch auf der [offiziellen Pi-hole W
 * [IOC Update Report into adtech and Real Time Bidding](assets/rtb/adtech-real-time-bidding-report-201906.pdf)
 * [IAB TCF Vendor List](https://iabeurope.eu/vendor-list-tcf-v2-0/)
 * [Selling Off Privacy At Auction](assets/rtb/SellingOffPrivacyAtAuction.pdf)
+
+(weitere Quellen finden sich in den Slides der Präsentation)

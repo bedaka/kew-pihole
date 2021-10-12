@@ -355,3 +355,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
     background-color: var(--r-background-color);
   }
 }
+
+.citation {
+  font-size: 18px;
+  color:rgba(155, 132, 132, 0.2)
+}
