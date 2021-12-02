@@ -15,7 +15,7 @@ Du findest uns hier: https://ag-link.xyz/
 Part 1: Ein Betriebssystem auf dem Pi installieren und eine Verbindung aufbauen.
 
 1. Das Image mit dem Betriebssystem herunterladen (wir verwenden Raspberry OS light).
-2. Image auf SD karte schreiben (Zum Beispiel mit `edger` oder `rpi-imager`). Von dieser
+2. Image auf SD karte schreiben (Zum Beispiel mit `etcher` oder `rpi-imager`). Von dieser
   SD Karte wird dann der Raspberry Pi gestartet.
 3. Bevor wir die SD Karte in den Pi Stecken und booten konfigurieren wir noch den 
   Zugang zum WLAN, damit wir uns direkt von unserem Computer mit Pi verbinden können
